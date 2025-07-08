@@ -35,6 +35,8 @@ The code uses:
 | `diff_2d.f90` | Main Fortran code solving the equation     |
 | `solution.dat`    | Output data file with `(x, y, u)` values    |
 | `README.md`          | This documentation file                     |
+| `post_process.py`          | Plotting the Solution                  |
+
 
 ## 💡 How to Run
 
