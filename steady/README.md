@@ -43,3 +43,4 @@ The code uses:
 1. **Compile the code**:
    ```bash
    ifort -r8 diff_2d.f90
+2. You can also use gfortran to compile. gfortran diff_2d.f90 -o diff_2d and execute ./diff_2d
