@@ -15,7 +15,7 @@ This is mathematically equivalent to Laplace's equation for cases with constant 
 ## 🚀 Method
 
 The code uses:
-- A **finite difference** discretization
+- A **finite difference** discretization , central difference.
 - A **uniform Cartesian grid**
 - The **Gauss-Seidel method** for faster convergence 
 
