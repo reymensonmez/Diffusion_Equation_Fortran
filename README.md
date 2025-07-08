@@ -33,7 +33,7 @@ The code uses:
 | File Name           | Description                                  |
 |---------------------|----------------------------------------------|
 | `diff_2d.f90` | Main Fortran code solving the equation     |
-| `solution.dat`    | Output data file with `(x, y, u)` values    |
+| `solution.dat`    | Output data file with `(x, y, T)` values    |
 | `README.md`          | This documentation file                     |
 | `post_process.py`          | Plotting the Solution                  |
 
