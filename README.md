@@ -1,0 +1,43 @@
+# Steady-State 2D Diffusion Solver in Fortran 90
+
+This project implements a numerical solution to the steady-state 2D diffusion equation (with zero source term) using the **Gauss-Seidel iterative method** in Fortran 90.
+
+## 📌 Equation Solved
+
+We solve the steady-state 2D diffusion equation:
+
+\[
+\frac{\partial^2 T}{\partial x^2} + \frac{\partial^2 T}{\partial y^2} = 0
+\]
+
+This is mathematically equivalent to Laplace's equation for cases with constant diffusivity and no internal source.
+
+## 🚀 Method
+
+The code uses:
+- A **finite difference** discretization
+- A **uniform Cartesian grid**
+- The **Gauss-Seidel method** for faster convergence 
+
+## 🧱 Grid and Boundary Conditions
+
+- Grid size: 51 × 51 points
+- Domain: [0, 1] × [0, 1]
+- Spacing: uniform in both `x` and `y`
+- Boundary conditions:
+  - Bottom boundary (y = 0): \( T = 1 \)
+  - Other boundaries: \( T = 0 \)
+
+## 📂 Files
+
+| File Name           | Description                                  |
+|---------------------|----------------------------------------------|
+| `diff_2d.f90` | Main Fortran code solving the equation     |
+| `solution.dat`    | Output data file with `(x, y, u)` values    |
+| `README.md`          | This documentation file                     |
+
+## 💡 How to Run
+
+1. **Compile the code**:
+   ```bash
+   ifort -r8 diff_2d.f90
