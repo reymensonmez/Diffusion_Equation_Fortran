@@ -2,7 +2,7 @@
 
 This project implements a numerical solution to the steady-state 2D diffusion equation (with zero source term) using the **Gauss-Seidel iterative method** in Fortran 90.
 
-## 📌 Equation Solved
+## Equation Solved
 
 We solve the steady-state 2D diffusion equation:
 
@@ -12,14 +12,14 @@ We solve the steady-state 2D diffusion equation:
 
 This is mathematically equivalent to Laplace's equation for cases with constant diffusivity and no internal source.
 
-## 🚀 Method
+## Method
 
 The code uses:
-- A **finite difference** discretization , central difference.
-- A **uniform Cartesian grid**
-- The **Gauss-Seidel method** for faster convergence 
+- A finite difference discretization , central difference.
+- A uniform Cartesian grid
+- The Gauss-Seidel method for faster convergence 
 
-## 🧱 Grid and Boundary Conditions
+## Grid and Boundary Conditions
 
 - Grid size: 51 × 51 points
 - Domain: [0, 1] × [0, 1]
@@ -28,7 +28,7 @@ The code uses:
   - Bottom boundary (y = 0): \( T = 1 \)
   - Other boundaries: \( T = 0 \)
 
-## 📂 Files
+##  Files
 
 | File Name           | Description                                  |
 |---------------------|----------------------------------------------|
@@ -38,9 +38,9 @@ The code uses:
 | `post_process.py`          | Plotting the Solution                  |
 
 
-## 💡 How to Run
+##  How to Run
 
-1. **Compile the code**:
-   ```bash
+1. Compile the code:
+   
    ifort -r8 diff_2d.f90
 2. You can also use gfortran to compile. gfortran diff_2d.f90 -o diff_2d and execute ./diff_2d
